@@ -1,0 +1,59 @@
+[
+    
+    {
+        "code":"1001",
+        "msg": "Not found, system error.",
+        "description":""
+    },
+    {
+        "code":"1002",
+        "msg": "Sending message: success.",
+        "description":""
+    },
+    {
+        "code":"1003",
+        "msg": "Sending message: failure.",
+        "description":"- check your phone number, money in your account or restart system."
+    },
+    {
+        "code":"1004",
+        "msg": "Sending message: failure. Message-sender is busy.",
+        "description":""
+    },
+    {
+        "code":"1005",
+        "msg": "Sending message: failure. Stop at on.serial-port",
+        "description":""
+    },
+    {
+        "code":"1006",
+        "msg": "Sending message: failure. Stop at: AT+CMGF",
+        "description":""
+    },
+    {
+        "code":"1007",
+        "msg": "Processing...",
+        "description":"request received"
+    },
+    {
+        "code":"1008",
+        "msg": "Sending message: failure. Stop at: AT+CMGS",
+        "description":"- check your phone number, long of text. - check syntax of system"
+    },
+
+    {
+        "code":"1020",
+        "msg": "Success",
+        "description":""
+    },
+    {
+        "code":"1021",
+        "msg": "Failure, unknown error",
+        "description":""
+    },
+    {
+        "code":"1022",
+        "msg": "Failure, not found port_name",
+        "description":""
+    }
+]

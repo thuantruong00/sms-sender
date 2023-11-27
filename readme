@@ -1,0 +1,68 @@
+#about
+- SMS Message sender
+
+#setup
+#flow
+- install nodejs v18.16 (dev on window), npm
+- paste source in a folder
+- im my source /.env . to change port, you can add PORT=<port> or change PORT_DEV=<port>
+- npm install
+- to run: npm run start
+fill port_name & hotline
+step 1: 
+- access to <domain>/api/info/scan-port
+- find item have "friendlyName": "Simcom HS-USB AT PORT 9011 (xxxxx)"
+- the "path" is port_name
+step 2:
+- in my source /config.json
+- use value "path" fill to "name_port"
+- fill to "hotline", you will receive a sms message when the system restart
+- fill to "base_url", "path" to receive status of message. base_url/path
+- restart
+
+
+#api
+GET /api/info/scan-port >> to scan port
+GET /api/info/details >> to check more info
+
+**send sms message**
+POST /api/sms/send-one
+body
+{
+    "id":"value",
+    "phone_number":"+83xxxxx",
+    "text_contend":"abc"
+}
+
+response of request
+{
+    "msg": "Processing...",
+    "code": "1007",
+    "payload": {
+        "status": true
+    }
+}
+
+response of message at webhook. setup at config.json->"base_url","path"
+POST /path
+{
+  msg: 'Sending message: success.',
+  code: '1002',
+  payload: { status: true, id: '123abc' }
+}
+
+#code response description at: /services/status.json
+
+#link
+github > simcom_usb_driver
+https://github.com/TDLOGY/SIMCOM_USB_DRIVER
+
+SerialPort lib
+https://serialport.io/
+https://www.npmjs.com/package/serialport
+
+docs of module
+https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/nbiot/SIM7020%20Series_AT%20Command%20Manual_V1.05.pdf
+
+module sim7600ce
+https://linhkienthuduc.com/usb-dongle-4g-3g-2g-simcom-sim7600ce-lte-cat-4

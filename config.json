@@ -1,0 +1,6 @@
+{
+    "port_name":"COM9",
+    "hotline":"",
+    "base_url": "http://127.0.0.1:8003",
+    "path":"/"
+}

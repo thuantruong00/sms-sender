@@ -1,0 +1,32 @@
+The RSSI (Received Signal Strength Indication) and BER (Bit Error Rate) values reported by the AT+CSQ command are standard metrics used in cellular networks to assess signal strength and quality. However, it's important to note that the interpretation of these values can vary between different technologies (2G, 3G, 4G, etc.) and different manufacturers.
+
+Here are some general guidelines for interpreting RSSI and BER values:
+
+RSSI (Received Signal Strength Indication):
+Excellent Signal: RSSI values above -50 dBm
+Good Signal: RSSI values between -50 dBm and -70 dBm
+Fair Signal: RSSI values between -70 dBm and -90 dBm
+Weak Signal: RSSI values below -90 dBm
+These are rough guidelines and can vary between different devices and networks. A lower RSSI value generally indicates a weaker signal.
+
+BER (Bit Error Rate):
+Excellent Quality: BER values close to 0
+Good Quality: Low BER values
+Fair Quality: Moderate BER values
+Poor Quality: High BER values
+A lower BER value indicates better signal quality. It represents the percentage of bits received in error compared to the total number of bits received.
+
+It's important to refer to the documentation provided by the manufacturer of your specific GSM/GPRS module, as they may have specific guidelines and interpretations for the RSSI and BER values reported by their devices. Additionally, the standards or conventions used by different network operators might also influence the interpretation of these values.
+
+
+LTE: Indicates that the module is connected to an LTE network (4G).
+Online: Indicates that the module is online and registered on the network.
+452-04: MCC-MNC (Mobile Country Code - Mobile Network Code) indicating the network operator.
+0x6224: Tracking Area Code (TAC) in hexadecimal.
+7793666: E-UTRAN Cell ID.
+437: E-UTRAN Absolute Radio Frequency Channel Number (EARFCN).
+EUTRAN-BAND3: Indicates that the module is using LTE band 3.
+1700: E-UTRAN Bandwidth.
+5,5: Indicates the PCI (Physical Cell Identity) and Tracking Area Code (TAC) in decimal.
+-186,-1121,-741: Signal strength parameters (RSRP, RSRQ, and SINR).
+8: Indicates the connection status (Serving Cell Connection Status).
