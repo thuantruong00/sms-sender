@@ -17,7 +17,7 @@ step 2:
 - in my source /config.json
 - use value "path" fill to "name_port"
 - fill to "hotline", you will receive a sms message when the system restart
-- fill to "base_url", "path" to receive status of message. base_url/path
+- fill to "base_url", "path" to receive status of message. base_url/path 
 - restart
 
 
