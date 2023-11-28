@@ -22,10 +22,13 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 
 try {
-    port = new SerialPort({
-        path: port_name,
-        baudRate: 115200,
-    })
+    if(port_name.length>1){
+        port = new SerialPort({
+            path: port_name,
+            baudRate: 115200,
+        })
+    }
+
 } catch (error) {
     console.log(error)
 }
@@ -186,6 +189,7 @@ const test = async () => {
 
 
 try {
+if(port_name.length>1){
     port.on('data', function (data) {
         // console.log("on.serial-port: ")
         // console.log(data)
@@ -220,6 +224,7 @@ try {
             }
         }
     })
+}
 }
 catch (error) {
     console.log("try catch error, send message failure")
