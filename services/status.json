@@ -40,6 +40,11 @@
         "msg": "Sending message: failure. Stop at: AT+CMGS",
         "description":"- check your phone number, long of text. - check syntax of system"
     },
+    {
+        "code":"1009",
+        "msg": "Sending message: failure. Check your params",
+        "description":"phone_number.length>9 && id.length>0 && text_content.length>0"
+    },
 
     {
         "code":"1020",

@@ -1,6 +1,6 @@
 {
     "port_name":"",
     "hotline":"",
-    "base_url": "http://127.0.0.1:8003",
-    "path":"/"
+    "base_url": "https://shopcuasi.ssaigon.com",
+    "path":"/webhook/sms/"
 }

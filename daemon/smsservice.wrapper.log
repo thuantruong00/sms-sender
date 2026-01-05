@@ -1,0 +1,362 @@
+2023-12-02 13:38:20 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-02 13:38:20 - Started 18404
+2023-12-02 13:39:03 - Stopping smsservice.exe
+2023-12-02 13:39:03 - ProcessKill 18404
+2023-12-02 13:39:03 - Found child process: 13036 Name: conhost.exe
+2023-12-02 13:39:03 - Found child process: 10904 Name: node.exe
+2023-12-02 13:39:03 - Stopping process 13036
+2023-12-02 13:39:03 - Send SIGINT 13036
+2023-12-02 13:39:03 - SIGINT to 13036 failed - Killing as fallback
+2023-12-02 13:39:04 - Stopping process 10904
+2023-12-02 13:39:04 - Send SIGINT 10904
+2023-12-02 13:39:04 - SIGINT to 10904 failed - Killing as fallback
+2023-12-02 13:39:04 - Stopping process 18404
+2023-12-02 13:39:04 - Send SIGINT 18404
+2023-12-02 13:39:04 - SIGINT to 18404 failed - Killing as fallback
+2023-12-02 13:39:04 - Finished smsservice.exe
+2023-12-15 00:33:15 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-15 00:33:15 - Started 5584
+2023-12-16 11:51:44 - Stopping smsservice.exe
+2023-12-16 11:51:44 - ProcessKill 5584
+2023-12-16 11:51:44 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-16 11:52:11 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-16 11:52:11 - Started 5976
+2023-12-17 11:49:35 - Stopping smsservice.exe
+2023-12-17 11:49:35 - ProcessKill 5976
+2023-12-17 11:49:35 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-17 11:50:02 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-17 11:50:02 - Started 5352
+2023-12-21 14:11:25 - Stopping smsservice.exe
+2023-12-21 14:11:25 - ProcessKill 5352
+2023-12-21 14:11:25 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-21 14:11:55 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-21 14:11:55 - Started 6108
+2024-01-11 00:33:28 - Stopping smsservice.exe
+2024-01-11 00:33:28 - ProcessKill 6108
+2024-01-11 00:33:28 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-11 00:34:01 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-11 00:34:01 - Started 5824
+2024-01-14 12:59:45 - Stopping smsservice.exe
+2024-01-14 12:59:45 - ProcessKill 5824
+2024-01-14 12:59:46 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-14 13:00:16 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-14 13:00:16 - Started 5972
+2024-02-12 10:49:14 - Stopping smsservice.exe
+2024-02-12 10:49:14 - ProcessKill 5972
+2024-02-12 10:49:14 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-02-12 10:49:48 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-12 10:49:48 - Started 5884
+2024-02-17 04:34:54 - Stopping smsservice.exe
+2024-02-17 04:34:54 - ProcessKill 5884
+2024-02-17 04:34:55 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-02-17 04:35:25 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-17 04:35:25 - Started 5700
+2024-02-17 04:35:48 - Stopping smsservice.exe
+2024-02-17 04:35:48 - ProcessKill 5700
+2024-02-17 04:35:48 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-02-17 04:36:16 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-17 04:36:16 - Started 6012
+2024-03-02 01:48:48 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-02 01:48:48 - Started 5848
+2024-03-02 17:53:41 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-02 17:53:41 - Started 6056
+2024-03-14 00:33:51 - Stopping smsservice.exe
+2024-03-14 00:33:51 - ProcessKill 6056
+2024-03-14 00:33:51 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-03-14 00:34:30 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-14 00:34:30 - Started 5716
+2024-03-16 15:00:48 - Stopping smsservice.exe
+2024-03-16 15:00:48 - ProcessKill 5716
+2024-03-16 15:00:49 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-03-16 15:01:20 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-16 15:01:20 - Started 6048
+2024-04-11 07:48:17 - Stopping smsservice.exe
+2024-04-11 07:48:17 - ProcessKill 6048
+2024-04-11 07:48:17 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-04-11 07:48:56 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-04-11 07:48:56 - Started 6472
+2024-04-12 01:00:54 - Stopping smsservice.exe
+2024-04-12 01:00:54 - ProcessKill 6472
+2024-04-12 01:00:54 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-04-12 01:01:23 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-04-12 01:01:24 - Started 6308
+2024-05-04 06:42:35 - Stopping smsservice.exe
+2024-05-04 06:42:35 - ProcessKill 6308
+2024-05-04 06:42:35 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-05-04 06:43:14 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-05-04 06:43:14 - Started 6508
+2024-05-08 01:27:14 - Stopping smsservice.exe
+2024-05-08 01:27:14 - ProcessKill 6508
+2024-05-08 01:27:15 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-05-08 01:27:49 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-05-08 01:27:49 - Started 6684
+2024-05-16 12:13:12 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-05-16 12:13:12 - Started 5784
+2024-05-16 12:13:21 - Stopping smsservice.exe
+2024-05-16 12:13:21 - ProcessKill 5784
+2024-05-16 12:13:22 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-05-16 12:13:54 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-05-16 12:13:54 - Started 6236
+2024-06-02 11:48:30 - Stopping smsservice.exe
+2024-06-02 11:48:30 - ProcessKill 6236
+2024-06-02 11:48:30 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-06-02 11:49:06 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-06-02 11:49:06 - Started 6468
+2024-06-15 00:58:53 - Stopping smsservice.exe
+2024-06-15 00:58:53 - ProcessKill 6468
+2024-06-15 00:58:53 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-06-15 00:59:27 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-06-15 00:59:27 - Started 6056
+2024-06-18 00:44:16 - Stopping smsservice.exe
+2024-06-18 00:44:16 - ProcessKill 6056
+2024-06-18 00:44:16 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-06-18 00:44:45 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-06-18 00:44:45 - Started 6216
+2024-07-11 03:09:22 - Stopping smsservice.exe
+2024-07-11 03:09:22 - ProcessKill 6216
+2024-07-11 03:09:22 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-07-11 03:09:55 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-11 03:09:55 - Started 6564
+2024-07-11 03:43:43 - Stopping smsservice.exe
+2024-07-11 03:43:43 - ProcessKill 6564
+2024-07-11 03:43:44 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-07-11 03:44:16 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-11 03:44:16 - Started 4492
+2024-07-15 16:06:11 - Stopping smsservice.exe
+2024-07-15 16:06:11 - ProcessKill 4492
+2024-07-15 16:06:12 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-07-15 16:06:41 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-15 16:06:41 - Started 6588
+2024-07-26 19:11:02 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\nodejs\sms-project\node_modules\node-windows\lib\wrapper.js --file D:\nodejs\sms-project\app.js --scriptoptions= --log "smsService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-26 19:11:02 - Started 6184

@@ -4,7 +4,8 @@ const { SerialPort } = require('serialport');
 const { Readline } = require('@serialport/parser-readline');
 const { autoDetect } = require('@serialport/bindings-cpp')
 const status = require("./status")
-const config = require("../config.json")
+const config = require("../config.json");
+const { path } = require("express/lib/application");
 
 // setup
 // sms sender status
@@ -55,28 +56,35 @@ const init = async () => {
 
 }
 const sendMessage = async (data) => {
-    console.log("send message")
+    console.log("send message", data)
     // console.log(data)
     try {
         if (is_active_sender) {
-            console.log("port.write")
-            is_active_sender = false;
-            sms_id = data.id
-            // Send AT command to set SMS text mode
-            port.write('AT+CMGF=1\r\n');
-            // response_code = "1006"
-            // Wait for a moment before sending the actual SMS
-            setTimeout(() => {
-                // Send SMS command, AT+CMGS="<phone-number>"\r\n
-                port.write(`AT+CMGS="${data.phone_number}"\r\n`);
-                // response_code = "1008"
-
-                // Wait for the module to respond with '>'
+            if(data.phone_number.length>9 && data.id.length>0 && data.text_content.length>0){
+                console.log("port.write")
+                is_active_sender = false;
+                sms_id = data.id
+                // Send AT command to set SMS text mode
+                port.write('AT+CMGF=1\r\n');
+                // response_code = "1006"
+                // Wait for a moment before sending the actual SMS
                 setTimeout(() => {
-                    // Send the SMS text, replace 'Hello, World!' with your message
-                    port.write(`${data.text_content}\x1A`);
+                    // Send SMS command, AT+CMGS="<phone-number>"\r\n
+                    port.write(`AT+CMGS="${data.phone_number}"\r\n`);
+                    // response_code = "1008"
+    
+                    // Wait for the module to respond with '>'
+                    setTimeout(() => {
+                        // Send the SMS text, replace 'Hello, World!' with your message
+                        port.write(`${data.text_content}\x1A`);
+                    }, 1000);
                 }, 1000);
-            }, 1000);
+            }
+            else{
+                responseStatus({ ...status.getStatus("1009"), payload: { status: false, id: data.id } })
+                return;
+            }
+
         }
         else {
             responseStatus({ ...status.getStatus("1004"), payload: { status: false, id: data.id } })
@@ -171,12 +179,14 @@ const scanPort = async () => {
     }
 }
 const test = async () => {
-    console.log("getInfo");
+    console.log("getInfoxxx");
     responseStatus({ ...status.getStatus("1004") })
     try {
         if (is_active_sender) {
             // port.write('AT+CPIN?\r\n');
+            // port.write("AT+CGREG?\r\n")
             // port.write('AT+CPSI?\r\n');
+            // port.write("AT+CFUN=1\r\n")
 
         } else {
             return { ...status.getStatus("1004"), payload: { status: false } }
@@ -202,7 +212,7 @@ if(port_name.length>1){
         const regex_csq = /\+CSQ:/g;
         const regex_cpsi = /\+CPSI:/g;
 
-        // console.log(decoded_string)
+        console.log(decoded_string)
         if (!is_active_sender) {
             if (decoded_string.match(regex_cms_err)) {
                 reset_var();
@@ -238,14 +248,17 @@ function reset_var() {
 
 }
 const responseStatus = async (data) => {
-    // console.log('send status...', data)
-
+    console.log('send status...', data)
+    let path = '';
     // console.log(check.body)
     try {
-        let check = await axios.post(config.path, data)
+        path = "webhook/sms/"+data.payload.id
+        console.log(path)
+        let check = await axios.get(path, {data:data})
         console.log(check.data)
     } catch (error) {
-        console.log(error)
+        console.log("error cannot send to ",path)
+        // console.log(error)
     }
     return;
 }

@@ -31,10 +31,10 @@ body
 {
     "id":"value",
     "phone_number":"+83xxxxx",
-    "text_contend":"abc"
+    "text_content":"abc"
 }
 
-response of request
+POST - response
 {
     "msg": "Processing...",
     "code": "1007",
@@ -44,7 +44,7 @@ response of request
 }
 
 response of message at webhook. setup at config.json->"base_url","path"
-POST /path
+webhook - response
 {
   msg: 'Sending message: success.',
   code: '1002',
